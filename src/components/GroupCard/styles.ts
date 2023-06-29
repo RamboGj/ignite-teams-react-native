@@ -1,6 +1,6 @@
 import { UsersThree } from 'phosphor-react-native'
 import { TouchableOpacity } from "react-native";
-import styled from 'styled-components/native'
+import styled, { css } from 'styled-components/native'
 
 export const Card = styled(TouchableOpacity)`
   width: 100%;
@@ -16,11 +16,13 @@ export const Card = styled(TouchableOpacity)`
 `
 
 export const GroupName = styled.Text`
-  color: ${({theme}) => theme.COLORS.GRAY_200};
-  font-family: ${({theme}) => theme.FONT_FAMILY.REGULAR};
-  font-size: ${({theme}) => theme.FONT_SIZE.MD}px;
+  margin-left: 18px;
 
-  margin-left: 16px;
+  ${({ theme }) => css`
+    color: ${theme.COLORS.GRAY_200};
+    font-family: ${theme.FONT_FAMILY.REGULAR};
+    font-size: ${theme.FONT_SIZE.MD}px;
+  `}
 `
 
 export const GroupIcon = styled(UsersThree).attrs(({theme}) => ({
