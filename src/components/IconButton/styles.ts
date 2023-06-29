@@ -2,7 +2,7 @@ import styled from 'styled-components/native'
 import { TouchableOpacity } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons'
 
-export type IconButtonTypeStyleProps = 'primary' | 'second'
+export type IconButtonTypeStyleProps = 'primary' | 'secondary'
 
 type IconButtonProps = {
   type: IconButtonTypeStyleProps

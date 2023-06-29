@@ -29,7 +29,6 @@ export function Groups() {
         ListEmptyComponent={() => <ListEmpty message='You have not added any group yet.' />}
       />
       
-
       <Button label='Add group' />
     </Container>
   );
